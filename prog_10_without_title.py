@@ -15,10 +15,10 @@ for character in user_input:
         capitalize_next = False
     elif "A" <= character <= "Z":
         if not capitalize_next:
-            output += chr(ord(char) + 32)
+            output += chr(ord(character) + 32)
         else:
             output += character
-        capitalize_next += False
+        capitalize_next = False
     else:
         output += character
         capitalize_next = True
